@@ -1,0 +1,23 @@
+# wetter.de
+staging:
+  www:
+    # Placeholder %release% is replaced by the release being deployed
+    archive: /var/www/vm01/lib.tar.gz
+    directory: /tmp/test
+    user: vagrant
+    hosts:
+      - 192.168.1.52
+      - 192.168.1.53
+    tasks:
+      before-deploy:
+        - do-something
+
+production:
+  www:
+    # Placeholder %release% is replaced by the release being deployed
+    archive: /var/www/vm01/lib.tar.gz
+    directory: /tmp/test2
+    user: vagrant
+    hosts:
+      - 192.168.1.52
+      - 192.168.1.53

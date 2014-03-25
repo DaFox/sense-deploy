@@ -1,0 +1,13 @@
+{
+    "require": {
+        "php": ">=5.4.0",
+        "zendframework/zend-log": "2.3.*",
+        "zendframework/zend-config": "2.3.0",
+        "symfony/console": "v2.3.10",
+        "symfony/yaml": "v2.3.11"
+    },
+
+    "autoload": {
+        "psr-0": {"Sense": "classes/"}
+    }
+}

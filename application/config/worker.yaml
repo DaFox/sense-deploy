@@ -1,0 +1,2 @@
+lockfile: /tmp/locks/%project%.%environment%.lock
+servers: 127.0.0.1:4730

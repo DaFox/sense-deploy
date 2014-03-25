@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+
+use Sense\Deploy\Application\Command\WorkerCommand;
+use Sense\Deploy\Application\Command\DeployCommand;
+use Symfony\Component\Console\Application;
+
+try {
+    require dirname(__DIR__) . '/application/bootstrap/init.php';
+
+    $application = new Application("SENSE Deploy", "1.0.0");
+    $application->add(new WorkerCommand());
+    $application->add(new DeployCommand());
+    $application->run();
+}
+catch(\Exception $ex) {
+    throw $ex;
+}
