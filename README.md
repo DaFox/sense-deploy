@@ -15,19 +15,19 @@ $ composer update
 
 # Usage #
 
-1. Start 1 to X master workers
+- Start 1 to X master workers
 
 ```bash
 $ bin/sense-deploy worker --master
 ```
 
-2. Start 1 to X deploy workers
+- Start 1 to X deploy workers
 
 ```bash
 $ bin/sense-deploy worker
 ```
 
-3. Run
+- Run
 
 ```bash
 $ bin/sense-deploy deploy <project> <environment> <release>
